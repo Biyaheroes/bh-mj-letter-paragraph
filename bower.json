@@ -1,0 +1,24 @@
+{
+  "name": "bh-mj-letter-paragraph",
+  "description": "Biyaheroes MJML Letter Paragraph Component",
+  "main": ".filter.js",
+  "authors": [
+    "Biyaheroes Developer"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "biyaheroes",
+    "letter",
+    "paragraph",
+    "component",
+    "bh-mj-letter-paragraph"
+  ],
+  "homepage": "https://github.com/Biyaheroes/bh-mj-letter-paragraph",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
