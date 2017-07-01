@@ -29,14 +29,14 @@
 
 	@module-configuration:
 		{
-			"package": "letter-greeting",
-			"path": "letter-greeting/letter-greeting.jsx",
-			"file": "letter-greeting.jsx",
-			"module": "letter-greeting",
+			"package": "bh-mj-letter-paragraph",
+			"path": "bh-mj-letter-paragraph/letter-paragraph.jsx",
+			"file": "letter-paragraph.jsx",
+			"module": "letter-paragraph",
 			"author": "Biyaheroes Developers",
 			"contributors": [
 				"Robot Biyaheroes <robot@biyaheroes.com>",
-				"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"eMail": "developers@biyaheroes.com",
 			"repository": "https://github.com/Biyaheroes/bh-mj-letter-greeting.git",
@@ -50,7 +50,6 @@
 
 	@include:
 		{
-			"falzy": "falzy",
 			"MJMLElement": "mjml-core",
 			"React": "react",
 			"Component": "react.Component",
@@ -67,6 +66,8 @@ import Column from "mjml-column";
 import Section from "mjml-section";
 import Text from "mjml-text";
 
+import wichevr from "wichevr";
+
 const tagName = "mj-letter-paragraph";
 
 const parentTag = [ "mj-container", "mj-section" ];
@@ -74,7 +75,10 @@ const parentTag = [ "mj-container", "mj-section" ];
 const endingTag = false;
 
 const defaultMJMLDefinition = {
-	"content": ""
+	"content": "",
+	"attributes": {
+		"paragraph": ""
+	}
 };
 
 @MJMLElement
@@ -82,12 +86,14 @@ class LetterParagraph extends Component {
 	render( ){
 		const { mjAttribute } = this.props;
 
-		let { content } = this.props;
+		let { paragraph } = this.props;
+
+		paragraph = wichevr ( paragraph, mjAttribute ( "paragraph" ) );
 
 		return ( <Section
 					{ ...this.props }
 					padding="10px 0px 10px 0px"
-					>
+				>
 					<Column>
 							<Text
 								style={ {
@@ -96,7 +102,7 @@ class LetterParagraph extends Component {
 									"letterSpacing": "0.5px",
 								} }
 							>
-								{ mjAttribute( 'content' ) } 
+								{ paragraph } 
 							</Text>		
 					</Column>
 				</Section> );

@@ -1,6 +1,5 @@
 yarn add \
 babel-runtime \
-falzy \
 jquery \
 mjml \
 mjml-column \
@@ -44,7 +43,6 @@ webpack-dev-server \
 yargs \
 --dev && \
 bower install \
-falzy \
 jquery \
 react \
 wichevr \
