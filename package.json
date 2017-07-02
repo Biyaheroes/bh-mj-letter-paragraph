@@ -1,6 +1,6 @@
 {
   "name": "bh-mj-letter-paragraph",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Biyaheroes MJML Letter Paragraph Component",
   "main": "letter-paragraph.js",
   "support": "letter-paragraph.support.js",
@@ -10,7 +10,7 @@
     "deploy": "veon set production \"gulp clean && gulp && babel letter-paragraph.js --out-file letter-paragraph.support.js --source-maps && webpack --progress\"",
     "build": "veon set development \"gulp clean && gulp && babel letter-paragraph.js --out-file letter-paragraph.support.js --source-maps && webpack --progress\"",
     "test": "veon set test \"gulp && webpack --progress --env.test && npm run render\"",
-    "render": "mjml test-index.mjml --output test-index.html",  
+    "render": "mjml test-index.mjml --output test-index.html",
     "watch": "gulp clean && watch \"npm run test\" ./ ./*/ --filter=./.filter.js --wait=5 --interval=5 --ignoreDotFiles",
     "live": "gulp clean && gulp watch",
     "server": "veon set test \"webpack-dev-server --env.test\"",
@@ -31,7 +31,8 @@
   "author": "Biyaheroes Developer <developer@biyaheroes.com>",
   "contributors": [
     "Robot Biyaheroes <robot@biyaheroes.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com"
+    "Vinse Vinalon <vinsevinalon@gmail.com",
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
