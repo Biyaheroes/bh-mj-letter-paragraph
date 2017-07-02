@@ -1,6 +1,6 @@
 {
   "name": "bh-mj-letter-paragraph",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Biyaheroes MJML Letter Paragraph Component",
   "main": "letter-paragraph.js",
   "support": "letter-paragraph.support.js",

@@ -93,11 +93,10 @@ class LetterParagraph extends Component {
 
 		return ( <Section
 					{ ...this.props }
-					padding="10px 0px 10px 0px"
 				>
 					<Column>
 							<Text
-								padding="0px 30px 0px 30px"
+								padding="10px 30px 10px 30px"
 								font-size="15px"
 								letter-spacing="0.5px"
 							>
