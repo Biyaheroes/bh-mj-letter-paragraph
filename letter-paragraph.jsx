@@ -36,7 +36,8 @@
 			"author": "Biyaheroes Developers",
 			"contributors": [
 				"Robot Biyaheroes <robot@biyaheroes.com>",
-				"Vinse Vinalon <vinsevinalon@gmail.com>"
+				"Vinse Vinalon <vinsevinalon@gmail.com>",
+				"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
 			],
 			"eMail": "developers@biyaheroes.com",
 			"repository": "https://github.com/Biyaheroes/bh-mj-letter-greeting.git",
@@ -92,18 +93,15 @@ class LetterParagraph extends Component {
 
 		return ( <Section
 					{ ...this.props }
-					padding="10px 0px 10px 0px"
 				>
 					<Column>
 							<Text
-								style={ {
-									"padding": "0px 30px 0px 30px",
-									"fontSize": "17px",
-									"letterSpacing": "0.5px",
-								} }
+								padding="10px 30px 10px 30px"
+								font-size="15px"
+								letter-spacing="0.5px"
 							>
-								{ paragraph } 
-							</Text>		
+								{ paragraph }
+							</Text>
 					</Column>
 				</Section> );
 	}
